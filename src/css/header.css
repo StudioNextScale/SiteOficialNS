@@ -1,0 +1,18 @@
+/* NextScale | Cabeçalho e menu */
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(23,25,28,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.25rem var(--fh);color:var(--white)}
+.brand img{width:38px;height:38px}
+.brand b{color:var(--neon)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:30px}
+nav a.l{position:relative;font-weight:500;font-size:.95rem;padding:6px 0;transition:color .25s}
+nav a.l::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--neon);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a.l:hover,nav a.l:focus-visible{color:var(--white)}nav a.l:hover::after,nav a.l:focus-visible::after{transform:scaleX(1)}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);color:var(--white);cursor:pointer;align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:currentColor;border-radius:2px;position:relative;transition:transform .3s,background .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] span::after{transform:translateY(-6px) rotate(-45deg)}

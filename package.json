@@ -1,0 +1,7 @@
+{
+  "name": "nextscale-landing",
+  "version": "1.0.0",
+  "description": "Landing page da NextScale",
+  "private": true,
+  "scripts": { "start": "npx serve ." }
+}

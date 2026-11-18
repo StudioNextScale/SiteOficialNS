@@ -1,0 +1,22 @@
+/* NextScale | Contato e formulário */
+/* contact */
+.contact{display:grid;gap:36px}
+.contact h2{font-size:clamp(1.8rem,4.6vw,2.8rem);margin-bottom:14px}
+.ways{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.ways a{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:var(--bg2);transition:border-color .3s,transform .3s}
+.ways a:hover{border-color:rgba(57,255,20,.5);transform:translateX(4px)}
+.ways .ico{color:var(--neon);flex:none}
+.ways small{display:block;font-size:.8rem}.ways b{color:var(--white);font-weight:500;word-break:break-all}
+form{padding:clamp(22px,4vw,34px);border-radius:24px;border:1px solid var(--line);background:rgba(48,53,58,.55);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);display:grid;gap:18px}
+.f{display:grid;gap:6px}
+label{font-size:.9rem;color:var(--white);font-weight:500}
+input,select,textarea{width:100%;min-height:48px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--white);font:inherit;transition:border-color .25s,box-shadow .25s}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--neon);box-shadow:0 0 0 3px rgba(57,255,20,.18)}
+.f.bad input,.f.bad select,.f.bad textarea{border-color:#ff6b6b}
+.f.ok input,.f.ok select,.f.ok textarea{border-color:rgba(57,255,20,.6)}
+.err{font-size:.82rem;color:#ff8a8a;min-height:1.1em}
+#status{font-size:.92rem;border-radius:14px;padding:0;color:var(--white)}
+#status:not(:empty){padding:14px 16px;border:1px solid rgba(57,255,20,.35);background:rgba(57,255,20,.08)}
+#status.error:not(:empty){border-color:#ff6b6b;background:rgba(255,107,107,.1)}
+#status .btn{margin-top:12px}

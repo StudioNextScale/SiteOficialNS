@@ -1,0 +1,19 @@
+/* NextScale | Breakpoints responsivos */
+@media (max-width:859px){
+.burger{display:inline-flex}
+nav{position:absolute;left:0;right:0;top:100%;background:rgba(23,25,28,.96);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;visibility:hidden;transition:max-height .4s,visibility .4s}
+nav.open{max-height:480px;visibility:visible}
+nav ul{flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 22px}
+nav a.l{display:block;padding:14px 0;border-bottom:1px solid var(--line)}
+nav li:last-child{margin-top:16px}nav li:last-child .btn{width:100%}
+}
+@media (min-width:640px){.grid4{grid-template-columns:repeat(2,1fr)}.fg{grid-template-columns:1.4fr 1fr 1fr}}
+@media (min-width:860px){
+section{padding:104px 0}
+.hero{padding-top:calc(68px + 72px)}
+.hero .wrap{grid-template-columns:1.1fr .9fr}
+.grid3{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(4,1fr)}
+.about{grid-template-columns:1fr 1fr;gap:72px}
+.contact{grid-template-columns:.9fr 1.1fr;gap:64px}
+.fg{grid-template-columns:1.6fr 1fr 1fr 1.2fr}
+}
